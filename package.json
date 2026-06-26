@@ -1,0 +1,21 @@
+{
+  "name": "license-backend",
+  "version": "1.0.0",
+  "description": "Backend de licencias para la extensión Extractor de Correos. Controla cuántas máquinas pueden activar cada código de licencia (1 o 3).",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "generate-license": "node src/generate-license.js",
+    "list-licenses": "node src/list-licenses.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
